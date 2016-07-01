@@ -12,7 +12,7 @@ namespace MVVM.ViewModels
 {
     public class MainViewModel : ViewModel
     {
-        public event PropertyChangedEventHandler PropertyChanged;
+         
         ObservableCollection<Device> Devices;
         public MainViewModel()
         {
@@ -20,7 +20,7 @@ namespace MVVM.ViewModels
             for (int i = 1; i <= 5; i++)
             {
                 Devices.Add(new Device() { Name = "Iphone",Type="4" });
-               
+				Devices.Add(new Device() { Name = "Iphone", Type = "5" });
 
             }
         }
